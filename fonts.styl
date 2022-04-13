@@ -1,0 +1,63 @@
+repo = {
+    '0': 'https://raw.githubusercontent.com/kyle1an/SF-1/main',
+    '1': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main',
+    '2': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master'
+};
+$link = repo['2'];
+// @formatter:off
+$uni-gen = U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;
+$uni____ = U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
+// @formatter:on
+$uni-mono = $uni-gen, $uni____;
+$monos = consolas, Menlo, 'Roboto Mono', 'SF Mono';
+$comps = Arial, SF Compact Text, Roboto, 'Segoe UI', '.SFNSDisplay-Regular';
+wgts = { Light: 300, Regular: 400, Medium: 500, Semibold: 600, Bold: 700 };
+weights = merge({ Thin: 200 }, wgts);
+mono = { families: $monos, weight: wgts, unicode: $uni-mono, dir: '/Fonts/SF-Mono-' };
+comp = { families: $comps, weight: weights, unicode: $uni-gen, dir: '/Fonts/SF-Compact-Text-' };
+
+import(o, fn) {
+    for f in o[families] {
+        for key, num in o[weight] {
+            for style in '' 'Italic' {
+                @font-face {
+                    font-family: f;
+                    src: fn($link, o[dir], key, style);
+                    unicode-range: o[unicode];
+                    font-weight: num;
+                    font-style: (style == '') ? normal : italic;
+                    font-display: swap;
+                }
+            }
+        }
+    }
+}
+
+src_url(repo, dir, weight, i) {
+    url(repo + dir + weight + i + '.otf');
+}
+
+/* ──────── Fira Mono, IBM Plex Mono */
+import(
+    mono,
+    @(repo, dir, weight, style) {
+		local('SF Mono '+ weight + (style == 'Italic'? ' Italic':'')) \, 
+    src_url(repo, dir, weight, style);
+}
+);
+import(
+    comp,
+    @(repo, dir, weight, style) {
+    local('SF Compact Text '+ weight + (style == 'Italic'? ' Italic':'')) \, 
+    src_url(repo, dir, weight, style);
+}
+);
+
+@font-face {
+  font-family: 'XcodeDigits';
+  src: url("https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master/Fonts/XcodeDigits-regular.ttf");
+  unicode-range: U+0030-0039;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

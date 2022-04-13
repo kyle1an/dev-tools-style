@@ -1,0 +1,95 @@
+* {
+    // -moz-font-feature-settings: "smcp";
+    // -webkit-font-feature-settings: "tnum"  !important;
+    font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum' 0, 'ss03' 0, 'ss04';
+}
+
+:root {
+    --monospace-font: SF Mono, monospace, ui-monospace;
+    --xcode: XcodeDigits, SF Mono;
+    --compact: SF Compact Text, SF Text;
+}
+
+.monospace, .source-code {
+    font-family: var(--monospace-font) !important;
+}
+
+:host-context(.platform-mac) .monospace, :host-context(.platform-mac) .source-code, .platform-mac .monospace, .platform-mac .source-code, :host-context(.platform-linux) .monospace, :host-context(.platform-linux) .source-code, .platform-linux .monospace, .platform-linux .source-cod, :host-context(.platform-linux) .monospace, :host-context(.platform-linux) .source-code, .platform-linux .monospace, .platform-linux .source-code {
+    font-family: var(--monospace-font) !important;
+}
+
+::shadow .monospace, ::shadow .source-code {
+    font-family: var(--monospace-font) !important;
+}
+
+.parent.search-result.expanded + ol, .call-frame-title-text {
+    font-family: var(--monospace-font) !important;
+}
+
+.platform-linux, .platform-mac, .platform-windows {
+    font-family: var(--compact) !important;
+}
+
+platform-windows {
+    font-family: var(--compact) !important;
+}
+
+.tabbed-pane-header-tab-title {
+    overflow: visible !important;
+}
+
+// ol.tree-outline, 
+// .tree-outline ol {
+//     overflow: hidden !important;
+// }
+
+.platform-windows, :host-context(.platform-windows) {
+    --monospace-font-family: var(--monospace-font);
+    --source-code-font-family: var(--monospace-font);
+}
+
+// body.platform-windows {
+// zoom: 0.85;
+// }
+.vbox.flex-auto.tabbed-pane.navigator-tabbed-pane {
+    // zoom: 0.9;
+}
+
+.CodeMirror-gutters {
+    position: absolute !important;
+}
+
+.platform-mac {
+    // font-family: -apple-system, system-ui !important;
+    // letter-spacing: 0.025em;
+}
+
+.platform-mac, :host-context(.platform-mac) {
+    --monospace-font-family: var(--monospace-font);
+    --source-code-font-family: var(--monospace-font);
+}
+
+.ͼ5 .cm-scroller,
+.insertion-point-sidebar,
+.call-frame-location {
+    --monospace-font-family: var(--monospace-font);
+    --source-code-font-family: var(--monospace-font);
+    font-family: var(--monospace-font) !important;
+}
+.ͼ5 .cm-lineNumbers,
+.cm-gutters,
+.cm-gutters * {
+    --monospace-font-family: var(--xcode);
+    --source-code-font-family: var(--xcode);
+    font-family: var(--xcode) !important;
+    font-feature-settings:"tnum" !important;
+    font-variant-numeric: tabular-nums !important;
+}
+
+.ͼ5 .cm-scroller {
+    .cm-gutterElement {
+        --monospace-font-family: var(--xcode);
+        --source-code-font-family: var(--xcode);
+        font-family: var(--xcode) !important;
+    }
+}
