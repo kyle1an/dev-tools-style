@@ -1,7 +1,7 @@
 repo = {
-    '0': 'https://raw.githubusercontent.com/kyle1an/SF-1/main',
-    '1': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main',
-    '2': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master'
+  '0': 'https://raw.githubusercontent.com/kyle1an/SF-1/main',
+  '1': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main',
+  '2': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master'
 };
 $link = repo['2'];
 // @formatter:off
@@ -17,46 +17,46 @@ mono = { families: $monos, weight: wgts, unicode: $uni-mono, dir: '/Fonts/SF-Mon
 comp = { families: $comps, weight: weights, unicode: $uni-gen, dir: '/Fonts/SF-Compact-Text-' };
 
 import(o, fn) {
-    for f in o[families] {
-        for key, num in o[weight] {
-            for style in '' 'Italic' {
-                @font-face {
-                    font-family: f;
-                    src: fn($link, o[dir], key, style);
-                    unicode-range: o[unicode];
-                    font-weight: num;
-                    font-style: (style == '') ? normal : italic;
-                    font-display: swap;
-                }
-            }
+  for f in o[families] {
+    for key, num in o[weight] {
+      for style in '' 'Italic' {
+        @font-face {
+          font-family: f;
+          src: fn($link, o[dir], key, style);
+          unicode-range: o[unicode];
+          font-weight: num;
+          font-style: (style == '') ? normal : italic;
+          font-display: swap;
         }
+      }
     }
+  }
 }
 
 src_url(repo, dir, weight, i) {
-    url(repo + dir + weight + i + '.otf');
+  url(repo + dir + weight + i + '.otf');
 }
 
 /* ──────── Fira Mono, IBM Plex Mono */
 import(
-    mono,
-    @(repo, dir, weight, style) {
-		local('SF Mono '+ weight + (style == 'Italic'? ' Italic':'')) \, 
-    src_url(repo, dir, weight, style);
+  mono,
+  @(repo, dir, weight, style) {
+  $fStyle = style == 'Italic' ? ' Italic' : '';
+  local('SF Mono ' + weight + $fStyle) \, src_url(repo, dir, weight, style);
 }
 );
 import(
-    comp,
-    @(repo, dir, weight, style) {
-    local('SF Compact Text '+ weight + (style == 'Italic'? ' Italic':'')) \, 
-    src_url(repo, dir, weight, style);
+  comp,
+  @(repo, dir, weight, style) {
+  $fStyle = style == 'Italic' ? ' Italic' : '';
+  local('SF Compact Text ' + weight + $fStyle) \, src_url(repo, dir, weight, style);
 }
 );
 
 @font-face {
   font-family: 'XcodeDigits';
-  src: url("https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master/Fonts/XcodeDigits-regular.ttf");
-  unicode-range: U+0030-0039;
+  src: url('https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master/Fonts/XcodeDigits-regular.ttf');
+  unicode-range: @css { U+0030-0039 };
   font-weight: 400;
   font-style: normal;
   font-display: swap;
