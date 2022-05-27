@@ -1,4 +1,4 @@
-* {
+html {
   font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum' 0, 'ss03' 0, 'ss04';
 }
 :root {
@@ -12,6 +12,8 @@
   --source-code-font-family: var(--monospace-font);
   font-family: var(--monospace-font) !important;
 }
+.devtools-link,
+.cm-gutter.cm-lineNumbers *,
 .ͼ5 .cm-lineNumbers,
 .cm-gutters,
 .cm-gutters * {
@@ -26,8 +28,22 @@
   --source-code-font-family: var(--xcode);
   font-family: var(--xcode) !important;
 }
-.call-frame-location {
-  --monospace-font-family: var(--monospace-font);
-  --source-code-font-family: var(--monospace-font);
-  font-family: XcodeDigits, var(--monospace-font) !important;
+.call-frame-location,
+.dt-checkbox-text {
+  font-family: XcodeDigits, var(--compact) !important;
+}
+[aria-label*=' '] + .dt-checkbox-text {
+  font-family: var(--compact) !important;
+}
+.close-button.tabbed-pane-close-button {
+  order: 1;
+}
+.tabbed-pane-header-tab .tabbed-pane-close-button {
+  margin: 0 0px 0 2px;
+}
+.tabbed-pane-header-tab-title {
+  order: 2;
+}
+.tabbed-pane-header-tab.closeable {
+  padding-left: 0 !important;
 }

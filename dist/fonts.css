@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'XcodeDigits';
+  src: local('XcodeDigits Regular'), local('XcodeDigits-regular'), local('Xcode Digits'), local('Xcode Digits Regular'), url("https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts/master/Fonts/XcodeDigits-regular.ttf"), url("https://raw.githubusercontent.com/kyle1an/SF-Fonts/master/Fonts/XcodeDigits-regular.ttf");
+  unicode-range: U+0030-0039;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /* ──────── Fira Mono, IBM Plex Mono */
 @font-face {
   font-family: consolas;
@@ -797,13 +805,5 @@
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'XcodeDigits';
-  src: url("https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master/Fonts/XcodeDigits-regular.ttf");
-  unicode-range: U+0030-0039;
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }

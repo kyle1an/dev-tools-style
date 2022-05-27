@@ -14,7 +14,8 @@ const applyStyle = (paths) => {
 applyStyle([...styles, ...fonts]);
 
 const applyOnSelect = () => {
-  applyStyle([styles[1]]);
+    applyStyle([styles[1]]);
+    // applyStyle([...styles, ...fonts]);
 }
 
 chrome.devtools.panels.sources.onSelectionChanged.addListener(applyOnSelect);

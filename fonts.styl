@@ -1,7 +1,8 @@
 repo = {
   '0': 'https://raw.githubusercontent.com/kyle1an/SF-1/main',
   '1': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main',
-  '2': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master'
+  '2': 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master',
+  '3': 'https://raw.githubusercontent.com/kyle1an/SF-Fonts/master'
 };
 $link = repo['2'];
 // @formatter:off
@@ -37,6 +38,21 @@ src_url(repo, dir, weight, i) {
   url(repo + dir + weight + i + '.otf');
 }
 
+@font-face {
+  font-family: 'XcodeDigits';
+  src:
+    local('XcodeDigits Regular'),
+    local('XcodeDigits-regular'),
+    local('Xcode Digits'),
+    local('Xcode Digits Regular'),
+    url('https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts/master/Fonts/XcodeDigits-regular.ttf'),
+    url(repo['3'] + '/Fonts/XcodeDigits-regular.ttf');
+  unicode-range: @css { U+0030-0039 };
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ──────── Fira Mono, IBM Plex Mono */
 import(
   mono,
@@ -52,12 +68,3 @@ import(
   local('SF Compact Text ' + weight + $fStyle) \, src_url(repo, dir, weight, style);
 }
 );
-
-@font-face {
-  font-family: 'XcodeDigits';
-  src: url('https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master/Fonts/XcodeDigits-regular.ttf');
-  unicode-range: @css { U+0030-0039 };
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
