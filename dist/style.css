@@ -53,3 +53,12 @@ platform-windows {
   --monospace-font-family: var(--monospace-font);
   --source-code-font-family: var(--monospace-font);
 }
+.styles-section-subtitle .devtools-link,
+.console-message-anchor .devtools-link,
+.object-value-error .devtools-link {
+  --monospace-font-family: var(--xcode);
+  --source-code-font-family: var(--xcode);
+  font-family: var(--xcode) !important;
+  font-feature-settings: 'tnum' !important;
+  font-variant-numeric: tabular-nums !important;
+}

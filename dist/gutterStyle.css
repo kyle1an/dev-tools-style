@@ -12,7 +12,6 @@ html {
   --source-code-font-family: var(--monospace-font);
   font-family: var(--monospace-font) !important;
 }
-.devtools-link,
 .cm-gutter.cm-lineNumbers *,
 .ͼ5 .cm-lineNumbers,
 .cm-gutters,

@@ -1,7 +1,9 @@
-const styles = ['dist/style.css', 'dist/gutterStyle.css',];
-const fonts = ['dist/fonts.css',];
+const styles = ['dist/style.css', 'dist/gutterStyle.css'];
+const fonts = ['dist/fonts.css'];
 
-const applyStyle = (paths) => {
+console.log('devtools.js loaded');
+
+function applyStyle(paths) {
   for (const path of paths) {
     const x = new XMLHttpRequest();
     x.open('GET', path);
@@ -13,9 +15,6 @@ const applyStyle = (paths) => {
 
 applyStyle([...styles, ...fonts]);
 
-const applyOnSelect = () => {
-    applyStyle([styles[1]]);
-    // applyStyle([...styles, ...fonts]);
-}
-
-chrome.devtools.panels.sources.onSelectionChanged.addListener(applyOnSelect);
+chrome.devtools.panels.sources.onSelectionChanged.addListener(() => {
+  applyStyle([styles[1]]);
+});
