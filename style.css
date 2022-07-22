@@ -17,7 +17,6 @@ html {
 :host-context(.platform-linux) .monospace,
 :host-context(.platform-linux) .source-code,
 .platform-linux .monospace,
-.platform-linux .source-cod,
 .platform-linux .source-code {
   font-family: var(--monospace-font) !important;
 }
