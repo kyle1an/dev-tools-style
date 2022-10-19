@@ -1,6 +1,7 @@
 const styles = [
   '/style/style.css',
-  '/style/gutterStyle.css',
+  '/style/sourceFiles.css',
+  '/style/elements.css',
 ]
 const fonts = [
   '/style/fonts.css',
@@ -8,17 +9,22 @@ const fonts = [
 
 console.log('devtools.js loaded')
 
-function applyStyle(paths) {
+function applyStyles(paths) {
   for (const path of paths) {
-    const req = new XMLHttpRequest()
-    req.open('GET', path)
-    req.onload = () => chrome.devtools.panels.applyStyleSheet(req.responseText)
-    req.send()
+    applyStyle(path)
   }
 
   console.log('stylesApplied', paths)
 }
 
-applyStyle([...styles, ...fonts])
+function applyStyle(path) {
+  const req = new XMLHttpRequest()
+  req.open('GET', path)
+  req.onload = () => chrome.devtools.panels.applyStyleSheet(req.responseText)
+  req.send()
+}
 
-chrome.devtools.panels.sources.onSelectionChanged.addListener(() => applyStyle([styles[1]]))
+applyStyles([...styles, ...fonts])
+
+chrome.devtools.panels.sources.onSelectionChanged.addListener(() => applyStyle(styles[1]))
+chrome.devtools.panels.elements.onSelectionChanged.addListener(() => applyStyle(styles[2]))

@@ -10,15 +10,16 @@
 @uni-gen: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;
 @uni____: U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
 @uni-mono: @uni-gen, @uni____;
-@monos: consolas, Menlo, 'Roboto Mono', 'SF Mono';
+@monoFaces: consolas, Menlo, 'Roboto Mono', 'SF Mono';
 @comps: Arial, SF Compact Text, Roboto, 'Segoe UI', '.SFNSDisplay-Regular';
 
-@wgts: {
+@monoWeights: {
   Light: 300;
-  Regular: 400;
+  Medium: 400;
   Medium: 500;
   Semibold: 600;
   Bold: 700;
+  Heavy: 800;
 }
 
 @weights: {
@@ -58,7 +59,7 @@
   @otf: OpenType;
 }
 
-.import(@families, @tar, @weights, @unicode, @local: true) {
+.import-fonts(@families, @tar, @weights, @unicode, @local: true) {
   each(@families, .(@family, @k1, @i1) {
     each(@weights, .(@numeric, @weight-key, @i) {
       each(@styles, .(@style-val, @style, @i2) {
@@ -100,5 +101,5 @@
 }
 
 /* ──────── Fira Mono, IBM Plex Mono */
-.import(@monos, @tarMo, @wgts, @uni-mono);
-.import(@comps, @tarCM, @weights, @uni-gen);
+.import-fonts(@monoFaces, @tarMo, @monoWeights, @uni-mono);
+.import-fonts(@comps, @tarCM, @weights, @uni-gen);

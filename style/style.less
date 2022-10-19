@@ -5,9 +5,9 @@ html {
 }
 
 :root {
-  --monospace-font: SF Mono, monospace, ui-monospace;
-  --xcode: XcodeDigits, SF Mono;
-  --compact: SF Compact Text, SF Text;
+  --monospace-font: 'SF Mono', monospace, ui-monospace;
+  --xcode: XcodeDigits, 'SF Mono';
+  --compact: 'SF Compact Text', 'SF Text';
 }
 
 .monospace,
@@ -82,6 +82,14 @@ platform-windows {
   --source-code-font-family: var(--monospace-font);
 }
 
+.crumbs-scroll-container {
+  font-family: var(--monospace-font) !important;
+}
+
+.toolbar-text.toolbar-item {
+  font-family: XcodeDigits, var(--compact) !important;
+}
+
 // link
 .stack-preview-container .devtools-link,
 .initiator-column .devtools-link,
@@ -93,4 +101,28 @@ platform-windows {
   font-family: var(--xcode) !important;
   font-feature-settings: 'tnum' !important;
   font-variant-numeric: tabular-nums !important;
+}
+
+.object-properties-section.own-property,
+.webkit-html-close-tag-name, .webkit-html-tag-name {
+  -webkit-font-smoothing: initial !important;
+  font-weight: 900;
+}
+
+// Vue
+.value.object-value-object[title="Vue"]:not(:has(>span)),
+.object-properties-preview .object-value-object[title="Vue"],
+.object-value-object[title="Vue"] > .object-description {
+  -webkit-font-smoothing: initial !important;
+  font-weight: 900 !important;
+  color: #64B587;
+}
+
+.call-frame-title-text {
+  font-style: italic;
+}
+
+.event-listener-tree-subtitle .devtools-link,
+.name-and-value .devtools-link {
+  font-family: var(--xcode) !important;
 }

@@ -2,9 +2,9 @@ html {
   font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum' 0, 'ss03' 0, 'ss04';
 }
 :root {
-  --monospace-font: SF Mono, monospace, ui-monospace;
-  --xcode: XcodeDigits, SF Mono;
-  --compact: SF Compact Text, SF Text;
+  --monospace-font: 'SF Mono', monospace, ui-monospace;
+  --xcode: XcodeDigits, 'SF Mono';
+  --compact: 'SF Compact Text', 'SF Text';
 }
 .monospace,
 .source-code {
@@ -52,6 +52,12 @@ platform-windows {
   --monospace-font-family: var(--monospace-font);
   --source-code-font-family: var(--monospace-font);
 }
+.crumbs-scroll-container {
+  font-family: var(--monospace-font) !important;
+}
+.toolbar-text.toolbar-item {
+  font-family: XcodeDigits, var(--compact) !important;
+}
 .stack-preview-container .devtools-link,
 .initiator-column .devtools-link,
 .styles-section-subtitle .devtools-link,
@@ -63,3 +69,24 @@ platform-windows {
   font-feature-settings: 'tnum' !important;
   font-variant-numeric: tabular-nums !important;
 }
+.object-properties-section.own-property,
+.webkit-html-close-tag-name,
+.webkit-html-tag-name {
+  -webkit-font-smoothing: initial !important;
+  font-weight: 900;
+}
+.value.object-value-object[title="Vue"]:not(:has(>span)),
+.object-properties-preview .object-value-object[title="Vue"],
+.object-value-object[title="Vue"] > .object-description {
+  -webkit-font-smoothing: initial !important;
+  font-weight: 900 !important;
+  color: #64B587;
+}
+.call-frame-title-text {
+  font-style: italic;
+}
+.event-listener-tree-subtitle .devtools-link,
+.name-and-value .devtools-link {
+  font-family: var(--xcode) !important;
+}
+/*# sourceMappingURL=style.css.map */

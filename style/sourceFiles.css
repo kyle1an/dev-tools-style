@@ -1,10 +1,11 @@
-html {
+html * {
   font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum' 0, 'ss03' 0, 'ss04';
+  -webkit-font-smoothing: antialiased;
 }
 :root {
-  --monospace-font: SF Mono, monospace, ui-monospace;
-  --xcode: XcodeDigits, SF Mono;
-  --compact: SF Compact Text, SF Text;
+  --monospace-font: 'SF Mono', monospace, ui-monospace;
+  --xcode: XcodeDigits, 'SF Mono';
+  --compact: 'SF Compact Text', 'SF Text';
 }
 .ͼ5 .cm-scroller,
 .insertion-point-sidebar {
@@ -46,3 +47,18 @@ html {
 .tabbed-pane-header-tab.closeable {
   padding-left: 0 !important;
 }
+.object-value-boolean,
+.object-value-string,
+.name.own-property,
+.token-keyword,
+.token-string {
+  -webkit-font-smoothing: initial !important;
+  font-weight: 900 !important;
+}
+.object-properties-preview .name:has(+.object-value-function),
+.name:has(+.separator +.object-value-function.value),
+.name.object-properties-section-dimmed:has(+.separator +.object-value-function.value),
+.name.object-properties-section-dimmed.own-property:has(+.separator +.object-value-function.value) {
+  font-style: italic;
+}
+/*# sourceMappingURL=sourceFiles.css.map */
