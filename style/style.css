@@ -82,11 +82,18 @@ platform-windows {
   font-weight: 900 !important;
   color: #64B587;
 }
+.stack-preview-container .function-name,
 .call-frame-title-text {
   font-style: italic;
 }
 .event-listener-tree-subtitle .devtools-link,
 .name-and-value .devtools-link {
   font-family: var(--xcode) !important;
+}
+#network-container .status-column,
+#network-container .size-column,
+#network-container .time-column {
+  font-variant-numeric: tabular-nums !important;
+  font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum', 'ss03' 0, 'ss04';
 }
 /*# sourceMappingURL=style.css.map */
