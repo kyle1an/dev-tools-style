@@ -1,11 +1,5 @@
-@repos: {
-  a: 'https://raw.githubusercontent.com/kyle1an/SF-1/main';
-  b: 'https://raw.githubusercontent.com/kyle1an/SF-Fonts/master';
-  c: 'https://cdn.jsdelivr.net/gh/kyle1an/SF-1@main';
-  d: 'https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts@master';
-}
-
-@repo: @repos[d];
+@repo: 'https://raw.githubusercontent.com/meewill/SF/main';
+@repo: 'https://cdn.jsdelivr.net/gh/meewill/SF';
 
 @uni-gen: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;
 @uni____: U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
@@ -34,19 +28,19 @@
 @tarSF: {
   nam: 'SF Pro Text';
   dir: '/Fonts/SF-Pro-Text-';
-  ext: 'otf';
+  ext: 'woff2';
 }
 
 @tarMo: {
   nam: 'SF Mono';
   dir: '/Fonts/SF-Mono-';
-  ext: 'otf';
+  ext: 'woff2';
 }
 
 @tarCM: {
   nam: 'SF Compact Text';
   dir: '/Fonts/SF-Compact-Text-';
-  ext: 'otf';
+  ext: 'woff2';
 }
 
 @styles: {
@@ -57,15 +51,17 @@
 @formats: {
   @ttf: TrueType;
   @otf: OpenType;
+  @woff: woff;
+  @woff2: woff2;
 }
 
-.import-fonts(@families, @tar, @weights, @unicode, @local: true) {
+.load-fonts(@families, @tar, @weights, @unicode, @local: true) {
   each(@families, .(@family, @k1, @i1) {
     each(@weights, .(@numeric, @weight-key, @i) {
       each(@styles, .(@style-val, @style, @i2) {
         @font-face {
           font-family: @family;
-          .src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local);
+          .use-src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local);
           unicode-range: @unicode;
           font-weight: @numeric;
           font-style: @style;
@@ -76,7 +72,7 @@
   })
 }
 
-.src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local) {
+.use-src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local) {
   @nam: @tar[nam];
   @dir: @tar[dir];
   @ext: @tar[ext];
@@ -85,15 +81,14 @@
   src: if(@local, local('@{nam} @{weight-key}@{italic}') e(','),) url("@{repo}@{dir}@{weight-key}@{style-val}.@{ext}");
 }
 
-@repox: @repos[b];
 @font-face {
   font-family: 'XcodeDigits';
   src: local('XcodeDigits Regular'),
   local('XcodeDigits-regular'),
   local('Xcode Digits'),
   local('Xcode Digits Regular'),
-  url("https://cdn.jsdelivr.net/gh/kyle1an/SF-Fonts/master/Fonts/XcodeDigits-regular.ttf"),
-  url("@{repox}/Fonts/XcodeDigits-regular.ttf");
+  url("https://cdn.jsdelivr.net/gh/meewill/SF/Fonts/XcodeDigits-regular.ttf"),
+  url("@{repo}/Fonts/XcodeDigits-regular.ttf");
   unicode-range: U+0030-0039 ;
   font-weight: 400;
   font-style: normal;
@@ -101,5 +96,5 @@
 }
 
 /* ──────── Fira Mono, IBM Plex Mono */
-.import-fonts(@monoFaces, @tarMo, @monoWeights, @uni-mono);
-.import-fonts(@comps, @tarCM, @weights, @uni-gen);
+.load-fonts(@monoFaces, @tarMo, @monoWeights, @uni-mono);
+.load-fonts(@comps, @tarCM, @weights, @uni-gen);
