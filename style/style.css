@@ -96,4 +96,7 @@ platform-windows {
   font-variant-numeric: tabular-nums !important;
   font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum', 'ss03' 0, 'ss04';
 }
+#network-container td.name-column {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
