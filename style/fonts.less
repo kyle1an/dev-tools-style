@@ -56,9 +56,9 @@
 }
 
 .load-fonts(@families, @tar, @weights, @unicode, @local: true) {
-  each(@families, .(@family, @k1, @i1) {
-    each(@weights, .(@numeric, @weight-key, @i) {
-      each(@styles, .(@style-val, @style, @i2) {
+  each(@families, .(@family, @k1) {
+    each(@weights, .(@numeric, @weight-key) {
+      each(@styles, .(@style-val, @style) {
         @font-face {
           font-family: @family;
           .use-src(@family, @tar, @repo, @weight-key, @style-val, @numeric, @style, @local);
