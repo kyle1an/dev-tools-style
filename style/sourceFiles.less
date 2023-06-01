@@ -1,4 +1,4 @@
-html * {
+html {
   font-feature-settings: 'cv01', 'ss01', 'ss02', 'cv02' 0, 'cv03', 'cv05', 'cv06' 0, 'ss07' 0, 'cv07' 0, 'cv08', 'trad' 0, 'nlck', 'nalt' 0, 'ital', 'tnum' 0, 'ss03' 0, 'ss04';
   -webkit-font-smoothing: antialiased;
 }
@@ -36,6 +36,7 @@ html * {
   }
 }
 
+.breakpoint-item .location,
 .call-frame-location,
 .dt-checkbox-text {
   font-family: XcodeDigits, var(--compact) !important;
@@ -46,20 +47,13 @@ html * {
 }
 
 .close-button.tabbed-pane-close-button {
-  order: 1;
+  order: -1;
 }
 
 .tabbed-pane-header-tab .tabbed-pane-close-button {
   margin: 0 0px 0 2px;
 }
 
-.tabbed-pane-header-tab-title {
-  order: 2;
-}
-
-// .tabbed-pane-header-tab.closeable {
-// padding-right: 4px;
-// }
 .tabbed-pane-header-tab.closeable {
   padding-left: 0 !important;
 }
@@ -80,4 +74,10 @@ html * {
 .name.object-properties-section-dimmed:has(+.separator +.object-value-function.value),
 .name.object-properties-section-dimmed.own-property:has(+.separator +.object-value-function.value) {
   font-style: italic;
+}
+
+.token-comment {
+  --color-token-comment: #a3a3a3;
+  //color: #a3a3a3;
+  font-style: italic !important;
 }
