@@ -7,12 +7,19 @@ html {
   --xcode: XcodeDigits, 'SF Mono';
   --compact: 'SF Compact Text', 'SF Text';
 }
+.platform-windows,
+:host-context(.platform-windows) {
+  --source-code-font-size: 11px;
+  --monospace-font-size: 11px;
+}
 .ͼ5 .cm-scroller,
 .insertion-point-sidebar {
   --monospace-font-family: var(--monospace-font);
   --source-code-font-family: var(--monospace-font);
   font-family: var(--monospace-font) !important;
+  letter-spacing: var(--ltsp);
 }
+li.search-match .search-match-line-number,
 .cm-gutter.cm-lineNumbers *,
 .ͼ5 .cm-lineNumbers,
 .cm-gutters,
@@ -23,10 +30,16 @@ html {
   font-feature-settings: 'tnum' !important;
   font-variant-numeric: tabular-nums !important;
 }
+li.search-match .search-match-line-number {
+  display: inline-block;
+  min-width: 38px;
+  vertical-align: baseline !important;
+}
 .ͼ5 .cm-scroller .cm-gutterElement {
   --monospace-font-family: var(--xcode);
   --source-code-font-family: var(--xcode);
   font-family: var(--xcode) !important;
+  letter-spacing: var(--ltsp);
 }
 .breakpoint-item .location,
 .call-frame-location,

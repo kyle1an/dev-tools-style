@@ -5,10 +5,15 @@ html {
   --monospace-font: 'SF Mono', monospace, ui-monospace;
   --xcode: XcodeDigits, 'SF Mono';
   --compact: 'SF Compact Text', 'SF Text';
+  --ltsp: 0.02em;
 }
 .monospace,
 .source-code {
   font-family: var(--monospace-font) !important;
+  letter-spacing: var(--ltsp);
+}
+.code-snippet {
+  letter-spacing: var(--ltsp);
 }
 :host-context(.platform-mac) .monospace,
 :host-context(.platform-mac) .source-code,
@@ -19,14 +24,18 @@ html {
 .platform-linux .monospace,
 .platform-linux .source-code {
   font-family: var(--monospace-font) !important;
+  letter-spacing: var(--ltsp);
 }
 ::shadow .monospace,
 ::shadow .source-code {
   font-family: var(--monospace-font) !important;
+  letter-spacing: var(--ltsp);
 }
 .parent.search-result.expanded + ol,
 .call-frame-title-text {
   font-family: var(--monospace-font) !important;
+  font-size: var(--monospace-font-size);
+  letter-spacing: var(--ltsp);
 }
 .platform-linux,
 .platform-mac,
@@ -54,6 +63,7 @@ platform-windows {
 }
 .crumbs-scroll-container {
   font-family: var(--monospace-font) !important;
+  letter-spacing: var(--ltsp);
 }
 .toolbar-text.toolbar-item {
   font-family: XcodeDigits, var(--compact) !important;
