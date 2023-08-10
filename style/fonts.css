@@ -9,7 +9,7 @@
 /* ──────── Fira Mono, IBM Plex Mono */
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Light') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: normal;
@@ -17,7 +17,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Light Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: italic;
@@ -25,7 +25,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: normal;
@@ -33,7 +33,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: italic;
@@ -41,7 +41,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: normal;
@@ -49,7 +49,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: italic;
@@ -57,7 +57,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Semibold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: normal;
@@ -65,7 +65,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Semibold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: italic;
@@ -73,7 +73,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Bold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: normal;
@@ -81,7 +81,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Bold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: italic;
@@ -89,7 +89,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Heavy') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: normal;
@@ -97,7 +97,7 @@
 }
 @font-face {
   font-family: consolas;
-  src: local('SF Mono Heavy Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: italic;
@@ -105,7 +105,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Light') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: normal;
@@ -113,7 +113,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Light Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: italic;
@@ -121,7 +121,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: normal;
@@ -129,7 +129,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: italic;
@@ -137,7 +137,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: normal;
@@ -145,7 +145,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: italic;
@@ -153,7 +153,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Semibold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: normal;
@@ -161,7 +161,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Semibold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: italic;
@@ -169,7 +169,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Bold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: normal;
@@ -177,7 +177,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Bold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: italic;
@@ -185,7 +185,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Heavy') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: normal;
@@ -193,7 +193,7 @@
 }
 @font-face {
   font-family: Menlo;
-  src: local('SF Mono Heavy Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: italic;
@@ -201,7 +201,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Light') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: normal;
@@ -209,7 +209,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Light Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: italic;
@@ -217,7 +217,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: normal;
@@ -225,7 +225,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: italic;
@@ -233,7 +233,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: normal;
@@ -241,7 +241,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: italic;
@@ -249,7 +249,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Semibold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: normal;
@@ -257,7 +257,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Semibold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: italic;
@@ -265,7 +265,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Bold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: normal;
@@ -273,7 +273,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Bold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: italic;
@@ -281,7 +281,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Heavy') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: normal;
@@ -289,7 +289,7 @@
 }
 @font-face {
   font-family: 'Roboto Mono';
-  src: local('SF Mono Heavy Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: italic;
@@ -297,7 +297,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Light') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Light.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: normal;
@@ -305,7 +305,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Light Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-LightItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 300;
   font-style: italic;
@@ -313,7 +313,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: normal;
@@ -321,7 +321,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 400;
   font-style: italic;
@@ -329,7 +329,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Medium') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Medium.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: normal;
@@ -337,7 +337,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Medium Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-MediumItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 500;
   font-style: italic;
@@ -345,7 +345,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Semibold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Semibold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: normal;
@@ -353,7 +353,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Semibold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-SemiboldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 600;
   font-style: italic;
@@ -361,7 +361,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Bold') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Bold.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: normal;
@@ -369,7 +369,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Bold Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-BoldItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 700;
   font-style: italic;
@@ -377,7 +377,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Heavy') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-Heavy.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: normal;
@@ -385,7 +385,7 @@
 }
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono Heavy Italic') , url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
+  src:  url("https://cdn.jsdelivr.net/gh/meewill/SF@main/Fonts/Mono-HeavyItalic.woff2");
   unicode-range: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF, U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
   font-weight: 800;
   font-style: italic;

@@ -68,6 +68,9 @@ platform-windows {
 .toolbar-text.toolbar-item {
   font-family: XcodeDigits, var(--compact) !important;
 }
+#console-messages {
+  overflow-y: scroll !important;
+}
 .stack-preview-container .devtools-link,
 .initiator-column .devtools-link,
 .styles-section-subtitle .devtools-link,
