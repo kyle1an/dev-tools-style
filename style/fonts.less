@@ -1,16 +1,16 @@
 @repo: 'https://raw.githubusercontent.com/meewill/SF/main';
 @repo: 'https://cdn.jsdelivr.net/gh/meewill/SF@main';
 
-@uni-gen: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;
-@uni____: U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
-@uni-mono: @uni-gen, @uni____;
-@monoFaces: consolas, Menlo, 'Roboto Mono', 'SF Mono';
-@comps: Arial, SF Compact Text, Roboto, 'Segoe UI', '.SFNSDisplay-Regular';
+@unicode-gen: U+0000-024F, U+02B0-052F, U+1DC0-20CF, U+2190-22FF, U+2460-24FF, U+25A0-25FF, U+2700-27FF, U+2900-2BFF, U+2C60-2C7F, U+2DE0-2E7F, U+3200-32FF, U+A640-A69F, U+A700-A7FF, U+E000-F8FF, U+FFF0-FFFF, U+F0000-10FFFF;
+@unicode____: U+0250-02AF, U+1D00-1DBF, U+2190-22FF;
+@unicode-mono: @unicode-gen, @unicode____;
+@family-mono: consolas, Menlo, 'Roboto Mono', 'SF Mono';
+@family-comp: Arial, SF Compact Text, Roboto, 'Segoe UI', '.SFNSDisplay-Regular';
 
-@monoWeights: {
+@weight-mono: {
   Light: 300;
-  Medium: 400;
-  Medium: 500;
+  Semibold: 400;
+  Semibold: 500;
   Semibold: 600;
   Bold: 700;
   Heavy: 800;
@@ -25,19 +25,19 @@
   Bold: 700
 }
 
-@tarSF: {
+@tar-SF: {
   nam: 'SF Pro Text';
   dir: '/Fonts/SF-Pro-Text-';
   ext: 'woff2';
 }
 
-@tarMo: {
+@tar-mo: {
   nam: 'SF Mono';
-  dir: '/Fonts/Mono-';
+  dir: '/Fonts/Mono-Wide-';
   ext: 'woff2';
 }
 
-@tarCM: {
+@tar-CM: {
   nam: 'SF Compact Text';
   dir: '/Fonts/SF-Compact-Text-';
   ext: 'woff2';
@@ -96,5 +96,5 @@
 }
 
 /* ──────── Fira Mono, IBM Plex Mono */
-.load-fonts(@monoFaces, @tarMo, @monoWeights, @uni-mono);
-.load-fonts(@comps, @tarCM, @weights, @uni-gen);
+.load-fonts(@family-mono, @tar-mo, @weight-mono, @unicode-mono);
+.load-fonts(@family-comp, @tar-CM, @weights, @unicode-gen);
