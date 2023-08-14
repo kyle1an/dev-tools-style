@@ -6,6 +6,14 @@ html {
   --xcode: XcodeDigits, 'SF Mono';
   --compact: 'SF Compact Text', 'SF Text';
   --ltsp: 0.02em;
+  --ltsp: 0;
+}
+.platform-windows div,
+:host-context(.platform-windows) div {
+  --monospace-font-size: 11px !important;
+  --monospace-font-family: var(--monospace-font);
+  --source-code-font-size: 11px !important;
+  --source-code-font-family: var(--monospace-font);
 }
 .monospace,
 .source-code {
