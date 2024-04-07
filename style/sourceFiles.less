@@ -7,9 +7,13 @@ html {
   --monospace-font: 'SF Mono', monospace, ui-monospace;
   --xcode: XcodeDigits, 'SF Mono';
   --compact: 'SF Compact Text', 'SF Text';
+
+  --monospace-font-family: var(--monospace-font);
+  --source-code-font-family: var(--monospace-font);
 }
 
-.platform-windows, :host-context(.platform-windows) {
+.platform-windows,
+:host-context(.platform-windows) {
   --source-code-font-size: 11px;
   --monospace-font-size: 11px;
 }
@@ -83,10 +87,10 @@ li.search-match .search-match-line-number {
   font-weight: 900 !important;
 }
 
-.object-properties-preview .name:has(+.object-value-function),
-.name:has(+.separator +.object-value-function.value),
-.name.object-properties-section-dimmed:has(+.separator +.object-value-function.value),
-.name.object-properties-section-dimmed.own-property:has(+.separator +.object-value-function.value) {
+.object-properties-preview .name:has(+ .object-value-function),
+.name:has(+ .separator + .object-value-function.value),
+.name.object-properties-section-dimmed:has(+ .separator + .object-value-function.value),
+.name.object-properties-section-dimmed.own-property:has(+ .separator + .object-value-function.value) {
   font-style: italic;
 }
 

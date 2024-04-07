@@ -14,6 +14,8 @@ html {
 
 .monospace,
 .source-code {
+  --monospace-font-family: var(--monospace-font);
+  --source-code-font-family: var(--monospace-font);
   font-family: var(--monospace-font) !important;
   letter-spacing: var(--ltsp);
 }
@@ -116,18 +118,19 @@ platform-windows {
 }
 
 .object-properties-section.own-property,
-.webkit-html-close-tag-name, .webkit-html-tag-name {
+.webkit-html-close-tag-name,
+.webkit-html-tag-name {
   -webkit-font-smoothing: initial !important;
   font-weight: 900;
 }
 
 // Vue
-.value.object-value-object[title="Vue"]:not(:has(>span)),
-.object-properties-preview .object-value-object[title="Vue"],
-.object-value-object[title="Vue"] > .object-description {
+.value.object-value-object[title='Vue']:not(:has(> span)),
+.object-properties-preview .object-value-object[title='Vue'],
+.object-value-object[title='Vue'] > .object-description {
   -webkit-font-smoothing: initial !important;
   font-weight: 900 !important;
-  color: #64B587;
+  color: #64b587;
 }
 
 .stack-preview-container .function-name,
