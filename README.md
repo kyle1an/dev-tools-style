@@ -1,3 +1,5 @@
+**🚨 NOTICE: `chrome.devtools.panels.applyStyleSheet` was removed in chrome 131. [Learn more](https://issues.chromium.org/issues/369788368)**
+
 # dev-tools-style
 A Chrome plugin for customizing the style of dev tools
 
